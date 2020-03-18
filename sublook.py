@@ -53,7 +53,7 @@ for i in range(len(SUBDOMAIN)):
     th = threading.Thread(target=Subdomain_Status_Look)
     thread.append(th)
     th.start()
-    time.sleep(0.2)
+    time.sleep(0.6)
 
 for thjoin in thread:
     thjoin.join()
