@@ -32,10 +32,10 @@ def Subdomain_Status_Look():
         print("-"*60)
         if int(response.split()[1]) == 200:
             Saved(str(SUBDOMAIN[say]) + " - " + str(response.split()[1]))
-        """
-                if int(response.split()[1]) == 301:
+        
+        if int(response.split()[1]) == 301:
             Saved(str(SUBDOMAIN[say]) + " - " + str(response.split()[1]))
-        """
+        
         # Hangi STATUS KODLARI(200,301,404 vb.) İstiyorsanız ayarlayın.
         
     except:
