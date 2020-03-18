@@ -1,3 +1,6 @@
+### Kullanım:
+python sublook.py sublist.txt
+
 ### Info
 
 + 200 durum kodu dönen siteleri ayrı bir .txt açarak kaydeder. Başka durum kodlarını kaydetmesini istiyorsanız kodlarda düzenleme yapınız (Nasıl yapılıcağını belirttim).
