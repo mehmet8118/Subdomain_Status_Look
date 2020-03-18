@@ -13,13 +13,12 @@ SUBDOMAIN = [sub.strip() for sub in open('sublist.txt')]
 
 zaman = time.time()
 
-
 def Saved(put):
     file = open("output.txt","a+")
     file.writelines(str(put)+"\n")
 
-
 say = 0
+
 def Subdomain_Status_Look():
     global say
     try:
@@ -38,6 +37,7 @@ def Subdomain_Status_Look():
             Saved(str(SUBDOMAIN[say]) + " - " + str(response.split()[1]))
         """
         # Hangi STATUS KODLARI(200,301,404 vb.) İstiyorsanız ayarlayın.
+        
     except:
         print("Connection Error ==> "+ SUBDOMAIN[say])
     say +=1
