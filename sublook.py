@@ -7,7 +7,6 @@ import sys
 import threading
 import time
 import colorama
-import requests
 
 USERAGENT = [agent.strip() for agent in open('useragent.txt')]
 SUBDOMAIN = [sub.strip() for sub in open('sublist.txt')]
