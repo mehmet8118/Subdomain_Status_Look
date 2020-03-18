@@ -30,11 +30,15 @@ def Subdomain_Status_Look():
         print(colorama.Fore.GREEN + SUBDOMAIN[say]+ colorama.Style.RESET_ALL)
         print(response)
         print("-"*60)
+        
         if int(response.split()[1]) == 200:
             Saved(str(SUBDOMAIN[say]) + " - " + str(response.split()[1]))
         
         if int(response.split()[1]) == 301:
             Saved(str(SUBDOMAIN[say]) + " - " + str(response.split()[1]))
+        
+        else:
+            pass
         
         # Hangi STATUS KODLARI(200,301,404 vb.) İstiyorsanız ayarlayın.
         
