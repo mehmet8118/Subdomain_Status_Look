@@ -9,7 +9,7 @@ import time
 import colorama
 
 USERAGENT = [agent.strip() for agent in open('useragent.txt')]
-SUBDOMAIN = [sub.strip() for sub in open('sublist.txt')]
+SUBDOMAIN = [sub.strip() for sub in open(str(sys.argv[1]))]
 
 zaman = time.time()
 
