@@ -37,6 +37,9 @@ def Subdomain_Status_Look():
         if int(response.split()[1]) == 301:
             Saved(str(SUBDOMAIN[say]) + " - " + str(response.split()[1]))
         
+        if int(response.split()[1]) == 302:
+            Saved(str(SUBDOMAIN[say]) + " - " + str(response.split()[1]))
+        
         else:
             pass
         
