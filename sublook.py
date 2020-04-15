@@ -46,7 +46,8 @@ def Subdomain_Status_Look():
         # Hangi STATUS KODLARI(200,301,404 vb.) İstiyorsanız ayarlayın.
         
     except:
-        print("Connection Error ==> "+ SUBDOMAIN[say])
+        print("Connection Error ==> "+ colorama.Fore.RED+SUBDOMAIN[say]+ colorama.Style.RESET_ALL)
+        print("-"*60)
     say +=1
 
 
